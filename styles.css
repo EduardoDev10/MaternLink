@@ -438,17 +438,42 @@ nav ul li a:hover{
 }
 
 /* ===== RESPONSIVIDADE ===== */
-@media (max-width: 900px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 10px;
   }
 
-  .footer-logo {
-    justify-content: center;
+  .footer-content {
+    gap: 20px;
+  }
+
+  .footer-text {
+    font-size: 0.9em;
+    padding: 0 10px;
   }
 
   .social-icons a img {
-    margin-right: 5px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .footer-contact li {
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo h3 {
+    font-size: 1.1em;
+  }
+
+  .footer-text {
+    font-size: 0.85em;
+  }
+
+  .footer-contact h4 {
+    font-size: 1em;
   }
 }
