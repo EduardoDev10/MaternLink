@@ -1,92 +1,140 @@
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatternLink</title>
-    <link rel="stylesheet" href="styles.css">
-    <!--codigo comentado para melhor entendimento de colegas de equipe-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaternLink</title>
+  <link rel="stylesheet" href="styles.css">
+  <!--codigo comentado para melhor entendimento de colegas de equipe-->
 </head>
+
 <body>
-    <header>
-        <!--Logo da empresa-->
-        <div class="logo">
-            <img src="/imagens/logoacaidocerrado.png" alt="Logo da MatternLink">
+  <header>
+    <!--Logo da empresa-->
+    <div class="logo">
+      <img src="/imagens/logoacaidocerrado.png" alt="Logo da MaternLink">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Parte do carrossel de imagens-->
+    <section class="carrossel">
+      <div class="carousel-container">
+        <div class="slide active">
+          <img src="/imagens/img1.jpg" alt="Imagem 1">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!--Parte do carrossel de imagens-->
-        <section class="carrossel">
-    <div class="carousel-container">
-    <div class="slide active">
-      <img src="/imagens/banner.jpg" alt="Imagem 1">
-    </div>
-    <div class="slide">
-      <img src="/imagens/banner_tabacaria.jpg" alt="Imagem 2">
-    </div>
-    <div class="slide">
-      <img src="/imagens/banneracai.png" alt="Imagem 3">
-    </div>
+        <div class="slide">
+          <img src="/imagens/img2.jpg" alt="Imagem 2">
+        </div>
+        <div class="slide">
+          <img src="/imagens/img3.jpg" alt="Imagem 3">
+        </div>
 
-      <!-- Botões -->
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
+        <!-- Botões -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
 
-    <!-- Indicadores (bolinhas) -->
-    <div class="dots"></div>
-    </div>
-        </section>
+        <!-- Indicadores (bolinhas) -->
+        <div class="dots"></div>
+      </div>
+    </section>
 
-        <!--Hero section (aqui vai o texto explicativo sobre o via consultas e o botão CTA)-->
-        <section class="hero-section">
-  <div class="hero-container">
+    <br><br>
 
-    <!-- Texto principal -->
-    <div class="hero-text">
-      <h1>O que é o <span>Via Consultas</span>?</h1>
-      <p>
-        O <strong>Via Consultas</strong> é um aplicativo que ajuda você a <b>encontrar e agendar consultas médicas</b> de forma rápida e prática.  
-        Nossa missão é facilitar o acesso à saúde, conectando pacientes e profissionais em poucos toques.
+    <!--Hero section (aqui vai o texto explicativo sobre o via consultas e o botão CTA)-->
+    <section class="hero-section">
+      <div class="hero-container">
+
+        <!-- Texto principal -->
+        <div class="hero-text">
+          <h1>O que é o <span>Via Consultas</span>?</h1>
+          <p>
+            O <strong>Via Consultas</strong> é um aplicativo que ajuda você a <b>encontrar e agendar consultas
+              médicas</b> de forma rápida e prática.
+            Nossa missão é facilitar o acesso à saúde, conectando pacientes e profissionais em poucos toques.
+          </p>
+
+          <!-- Lista de funcionalidades -->
+          <ul class="features-list">
+            <li>
+              <img src="imagens/icone-agenda.png" alt="Ícone agenda">
+              <p><strong>Agende consultas</strong> com poucos cliques, direto pelo app.</p>
+            </li>
+            <li>
+              <img src="imagens/icone-remedios.png" alt="Ícone lembrete">
+              <p><strong>Receba lembretes</strong> automáticos de consultas e remédios.</p>
+            </li>
+            <li>
+              <img src="imagens/icone-mapa.png" alt="Ícone mapa">
+              <p><strong>Encontre médicos próximos</strong> à sua localização.</p>
+            </li>
+          </ul>
+
+          <a href="https://viaconsultas.com.br" target="_blank" class="cta-button">Acessar o app</a>
+        </div>
+
+        <!-- Imagem lateral ilustrativa -->
+        <div class="hero-image">
+          <img src="" alt="Tela do app Via Consultas">
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <br><br>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <div class="footer-logo">
+        <img src="img/logo.jpg" alt="Logo">
+        <div>
+          <h4>MaternLink</h4>
+          <p class="via">via Viaconsultas</p>
+        </div>
+      </div>
+      <p class="footer-text">
+        Cuidado especializado e completo para mães e bebês.  
+        Da concepção aos primeiros anos de vida, oferecemos o suporte médico que você e sua família precisam.
       </p>
 
-      <!-- Lista de funcionalidades -->
-      <ul class="features-list">
-        <li>
-          <img src="imagens/icone-agenda.png" alt="Ícone agenda">
-          <p><strong>Agende consultas</strong> com poucos cliques, direto pelo app.</p>
-        </li>
-        <li>
-          <img src="imagens/icone-remedios.png" alt="Ícone lembrete">
-          <p><strong>Receba lembretes</strong> automáticos de consultas e remédios.</p>
-        </li>
-        <li>
-          <img src="imagens/icone-mapa.png" alt="Ícone mapa">
-          <p><strong>Encontre médicos próximos</strong> à sua localização.</p>
-        </li>
+      <div class="social-icons">
+        <a href="#"><img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram"></a>
+        <a href="#"><img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook"></a>
+        <a href="#"><img src="https://img.icons8.com/color/48/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+    <!-- Coluna 2 - Contato -->
+    <div class="footer-section">
+      <h5>Contato</h5>
+      <ul class="contact-list">
+        <li><img src="https://img.icons8.com/color/24/phone.png" /> (61) 9999-9999</li>
+        <li><img src="https://img.icons8.com/color/24/new-post.png" /> contato@maternlink.com.br</li>
+        <li><img src="https://img.icons8.com/color/24/marker.png" /> Brasília, DF - Brasil</li>
+        <li><img src="https://img.icons8.com/color/24/clock.png" /> Atendimento 24/7</li>
       </ul>
-
-      <a href="#" class="cta-button">Acessar o app</a>
     </div>
 
-    <!-- Imagem lateral ilustrativa -->
-    <div class="hero-image">
-      <img src="/imagens/acaiimg.png" alt="Tela do app Via Consultas">
-    </div>
   </div>
-</section>
+
+  <div class="footer-bottom">
+    <p>© 2025 MaternLink — Todos os direitos reservados.</p>
+  </div>
+</footer>
 
 
-    </main>
-    <footer>
-        <p>&copy; 2023 MatternLink. Todos os direitos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
