@@ -1,0 +1,48 @@
+/*Codigo comentado para melhor entendimento dos colegas de equipe*/
+/*efeitos carrossel*/
+const slides = document.querySelectorAll(".slide");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const dotsContainer = document.querySelector(".dots");
+
+let current = 0;
+
+// Cria bolinhas dinamicamente
+slides.forEach((_, index) => {
+  const dot = document.createElement("button");
+  dot.addEventListener("click", () => goToSlide(index));
+  dotsContainer.appendChild(dot);
+});
+const dots = document.querySelectorAll(".dots button");
+
+function updateCarousel() {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === current);
+    dots[i].classList.toggle("active", i === current);
+  });
+}
+
+function goToSlide(index) {
+  current = index;
+  updateCarousel();
+}
+
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  updateCarousel();
+}
+
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  updateCarousel();
+}
+
+next.addEventListener("click", nextSlide);
+prev.addEventListener("click", prevSlide);
+
+// autoplay
+setInterval(nextSlide, 5000);
+
+// inicia
+updateCarousel();
+/*fim efeitos carrossel*/
