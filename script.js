@@ -46,3 +46,26 @@ setInterval(nextSlide, 5000);
 // inicia
 updateCarousel();
 /*fim efeitos carrossel*/
+
+/* === HEADER FIXO COM TRANSPARÊNCIA AO ROLAR === */
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 60) {
+    header.style.background = "rgba(255, 255, 255, 0.85)";
+    header.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)";
+    header.style.backdropFilter = "blur(6px)";
+  } else {
+    header.style.background = "transparent";
+    header.style.boxShadow = "none";
+    header.style.backdropFilter = "none";
+  }
+});
+
+/* === MENU HAMBURGUER === */
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+});
