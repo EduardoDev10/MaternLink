@@ -64,3 +64,33 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+
+
+
+/* EFEITO DO CARROSSEL NAS MENSAGENS */
+
+const quoteCards = document.querySelectorAll('.quote-card');
+const nextQuote = document.querySelector('.quote-next');
+const prevQuote = document.querySelector('.quote-prev');
+let quoteIndex = 0;
+
+function showQuote(i) {
+  quoteCards.forEach(q => q.classList.remove('active'));
+  quoteCards[i].classList.add('active');
+}
+
+function nextQ() {
+  quoteIndex = (quoteIndex + 1) % quoteCards.length;
+  showQuote(quoteIndex);
+}
+
+function prevQ() {
+  quoteIndex = (quoteIndex - 1 + quoteCards.length) % quoteCards.length;
+  showQuote(quoteIndex);
+}
+
+nextQuote.addEventListener('click', nextQ);
+prevQuote.addEventListener('click', prevQ);
+
+// Rotação automática
+setInterval(nextQ, 7000);
