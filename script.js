@@ -1,51 +1,57 @@
 /*Codigo comentado para melhor entendimento dos colegas de equipe*/
 /*efeitos carrossel*/
+/* ===== CARROSSEL (somente se existir) ===== */
 const slides = document.querySelectorAll(".slide");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const dotsContainer = document.querySelector(".dots");
 
-let current = 0;
+if (slides.length > 0 && prev && next && dotsContainer) {
 
-// Cria bolinhas dinamicamente
-slides.forEach((_, index) => {
-  const dot = document.createElement("button");
-  dot.addEventListener("click", () => goToSlide(index));
-  dotsContainer.appendChild(dot);
-});
-const dots = document.querySelectorAll(".dots button");
+    let current = 0;
 
-function updateCarousel() {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle("active", i === current);
-    dots[i].classList.toggle("active", i === current);
-  });
+    // cria bolinhas dinamicamente
+    slides.forEach((_, index) => {
+        const dot = document.createElement("button");
+        dot.addEventListener("click", () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll("button");
+
+    function updateCarousel() {
+        slides.forEach((slide, i) =>
+            slide.classList.toggle("active", i === current)
+        );
+        dots.forEach((dot, i) =>
+            dot.classList.toggle("active", i === current)
+        );
+    }
+
+    function goToSlide(index) {
+        current = index;
+        updateCarousel();
+    }
+
+    function nextSlide() {
+        current = (current + 1) % slides.length;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        current = (current - 1 + slides.length) % slides.length;
+        updateCarousel();
+    }
+
+    next.addEventListener("click", nextSlide);
+    prev.addEventListener("click", prevSlide);
+
+    // autoplay
+    setInterval(nextSlide, 5000);
+
+    updateCarousel();
 }
 
-function goToSlide(index) {
-  current = index;
-  updateCarousel();
-}
-
-function nextSlide() {
-  current = (current + 1) % slides.length;
-  updateCarousel();
-}
-
-function prevSlide() {
-  current = (current - 1 + slides.length) % slides.length;
-  updateCarousel();
-}
-
-next.addEventListener("click", nextSlide);
-prev.addEventListener("click", prevSlide);
-
-// autoplay
-setInterval(nextSlide, 5000);
-
-// inicia
-updateCarousel();
-/*fim efeitos carrossel*/
 
 /* MENU HAMBURGUER */
 const menuToggle = document.querySelector(".menu-toggle");
