@@ -8,7 +8,8 @@ A MaternLink é uma solução desenvolvida com foco em mães e gestantes, oferec
 
 🧠 Problemática
 
-Muitas mães relatam sentir-se sobrecarregadas, solitárias ou desinformadas durante a gravidez e nos primeiros meses de cuidados com o bebê. Informações se encontram fragmentadas em diversas fontes, muitas vezes sem orientação confiável ou acolhedora.
+Gestantes e mães enfrentam dificuldade para acessar consultas e exames essenciais,
+desde o pré-natal até o cuidado infantil, por valores acessíveis.
 
 💡 Solução Proposta
 
@@ -118,12 +119,12 @@ Comunicação e divisão de tarefas em equipe de TI <br> <br>
 
 | Nome         | Função                      |
 | ------------ | --------------------------- |
-| Eduardo      | Product Owner               |
-| Gabriel      | Scrum Master                |
+| Eduardo      | Product Owner | JavaScript  |
+| Gabriel      | Scrum Master  | JavaScript  |
 | Gustavo      | Front-end HTML              |
 | Luís Gustavo | CSS / estilo visual         |
 | João Vitor   | Responsividade / Mobile     |
-| Cayus        | JavaScript e interatividade |
+| Cayus        | Microtextos                 |
 | André        | Front-end HTML              |
 | Danylo       | Microtextos                 |
 | João André   | CSS / Testes                |
