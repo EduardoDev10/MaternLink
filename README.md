@@ -119,8 +119,8 @@ Comunicação e divisão de tarefas em equipe de TI <br> <br>
 
 | Nome         | Função                      |
 | ------------ | --------------------------- |
-| Eduardo      | Product Owner | JavaScript  |
-| Gabriel      | Scrum Master  | JavaScript  |
+| Eduardo      | Product Owner / JavaScript  |
+| Gabriel      | Scrum Master  / JavaScript  |
 | Gustavo      | Front-end HTML              |
 | Luís Gustavo | CSS / estilo visual         |
 | João Vitor   | Responsividade / Mobile     |
