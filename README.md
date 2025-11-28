@@ -2,16 +2,16 @@ MaternLink
 
 Conectando mães a informação, acolhimento e suporte
 
-📌 Visão Geral
+Visão Geral
 
 A MaternLink é uma solução desenvolvida com foco em mães e gestantes, oferecendo um ambiente digital que une acolhimento, informação, apoio psicológico e interação comunitária. Nosso objetivo é contribuir para uma maternidade mais segura, conectada e humana, utilizando tecnologia acessível e funcional.
 
-🧠 Problemática
+Problemática
 
 Gestantes e mães enfrentam dificuldade para acessar consultas e exames essenciais,
 desde o pré-natal até o cuidado infantil, por valores acessíveis.
 
-💡 Solução Proposta
+Solução Proposta
 
 Criamos um site responsivo que:
 
@@ -24,13 +24,13 @@ Criamos um site responsivo que:
 ✔ incentiva apoio emocional e troca de experiências <br> <br>
 
 
-🛠️ Tecnologias Utilizadas
+Tecnologias Utilizadas
 
 Foram utilizadas tecnologias front-end para a construção da LandingPage.
 
 HTML, CSS e JavaScript. <br> <br>
 
-📁 Estrutura do Projeto
+Estrutura do Projeto
 
 MaternLink/
 
@@ -62,7 +62,7 @@ MaternLink/
  
  └── README.md <br> <br>
 
-▶️ Execução do Projeto
+Execução do Projeto
 Opção 1 — Abrir direto
 
 Basta abrir o arquivo index.html no navegador.
@@ -81,7 +81,7 @@ Site será aberto em:
 
 http://127.0.0.1:5500/ <br> <br>
 
-🔎 Funcionalidades implementadas no MVP
+Funcionalidades implementadas no MVP
 
 ✔ Layout acolhedor com tons suaves
 
@@ -97,13 +97,13 @@ http://127.0.0.1:5500/ <br> <br>
 
 ✔ Elementos UI intuitivos <br> <br>
 
-🚀 Evoluções Futuras <br>
+Evoluções Futuras <br>
 
 Carrossel de Feedback das mães
 
 Fórum comunitário entre mães <br> <br>
 
-🧩 Desafios e Aprendizados
+Desafios e Aprendizados
 
 Durante o desenvolvimento, a equipe aprendeu:
 
@@ -115,7 +115,7 @@ Aplicação de responsividade real de tela
 
 Comunicação e divisão de tarefas em equipe de TI <br> <br>
 
-👥 Equipe Responsável
+Equipe Responsável
 
 | Nome         | Função                      |
 | ------------ | --------------------------- |
